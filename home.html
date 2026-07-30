@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor & Soul | Modern Culinary Studio</title>
+    <!-- Tailwind CSS CDN for rapid, trendy styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts: Outfit & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for modern minimalist icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom smooth scroll & glassmorphism */
+        html {
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-[#FBF9F5] text-[#2D2A26] antialiased selection:bg-[#E07A5F] selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#2D2A26] text-[#FBF9F5] text-xs py-2 px-4 text-center font-medium tracking-wider">
+        ✨ NEW SEASONAL RECIPE DROP: <span class="underline underline-offset-4 cursor-pointer hover:text-[#E07A5F]">Explore Autumn Harvest Bowls</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-[#EFECE6]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="font-serif text-2xl font-bold tracking-tight text-[#2D2A26] flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-[#E07A5F]"></span>
+                Savor & Soul
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#5C554E]">
+                <a href="#recipes" class="hover:text-[#E07A5F] transition-colors">Recipes</a>
+                <a href="#masterclass" class="hover:text-[#E07A5F] transition-colors">Masterclasses</a>
+                <a href="#story" class="hover:text-[#E07A5F] transition-colors">Our Philosophy</a>
+                <a href="#shop" class="hover:text-[#E07A5F] transition-colors">Shop Pantry</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-4">
+                <button class="hidden sm:flex items-center gap-2 text-sm font-medium text-[#2D2A26] hover:text-[#E07A5F]">
+                    <i class="fa-regular fa-bookmark"></i> Saved (4)
+                </button>
+                <a href="#recipes" class="bg-[#E07A5F] hover:bg-[#c9684e] text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-sm hover:shadow">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EFECE6] text-xs font-semibold text-[#5C554E] tracking-wide uppercase">
+                    <i class="fa-solid fa-sparkles text-[#E07A5F]"></i> Crafted for Modern Kitchens
+                </div>
+                
+                <h1 class="font-serif text-5xl lg:text-7xl font-bold leading-[1.1] text-[#2D2A26]">
+                    Cooking is an art. <br><span class="italic font-normal text-[#E07A5F]">Make it a masterpiece.</span>
+                </h1>
+                
+                <p class="text-lg text-[#5C554E] max-w-xl leading-relaxed">
+                    Discover chef-curated recipes, immersive video masterclasses, and conscious ingredient pairings designed to elevate your everyday cooking routine.
+                </p>
+
+                <!-- Search Bar Component -->
+                <div class="bg-white p-2 rounded-2xl shadow-xl shadow-[#2D2A26]/5 border border-[#EFECE6] flex items-center max-w-lg">
+                    <div class="pl-4 text-[#9C958D]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Search ingredients, dishes, or dietary needs..." class="w-full px-4 py-3 bg-transparent text-sm focus:outline-none placeholder-[#9C958D]">
+                    <button class="bg-[#2D2A26] hover:bg-black text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors">
+                        Search
+                    </button>
+                </div>
+
+                <!-- Quick Category Tags -->
+                <div class="flex items-center gap-3 text-xs font-medium text-[#7A7267] overflow-x-auto pb-2">
+                    <span class="text-[#2D2A26]">Popular:</span>
+                    <a href="#" class="px-3 py-1 bg-white border border-[#EFECE6] rounded-full hover:border-[#E07A5F] transition-colors">Quick Dinners</a>
+                    <a href="#" class="px-3 py-1 bg-white border border-[#EFECE6] rounded-full hover:border-[#E07A5F] transition-colors">Plant-Based</a>
+                    <a href="#" class="px-3 py-1 bg-white border border-[#EFECE6] rounded-full hover:border-[#E07A5F] transition-colors">Sourdough</a>
+                    <a href="#" class="px-3 py-1 bg-white border border-[#EFECE6] rounded-full hover:border-[#E07A5F] transition-colors">Under 30 Mins</a>
+                </div>
+            </div>
+
+            <!-- Hero Image Composition -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=1000&auto=format&fit=crop" alt="Delicious artisanal dish" class="w-full h-full object-cover">
+                </div>
+                <!-- Floating Card Widget -->
+                <div class="absolute -bottom-6 -left-6 z-20 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-[#EFECE6] max-w-xs flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-[#E07A5F]/10 flex items-center justify-center text-[#E07A5F] text-xl font-bold">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-[#7A7267] font-medium">Trending Recipe</p>
+                        <h4 class="text-sm font-bold text-[#2D2A26]">Truffle Wild Mushroom Risotto</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Trending Recipes Grid Section -->
+    <section id="recipes" class="py-20 bg-white border-t border-[#EFECE6]">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-[#E07A5F]">Handcrafted Selection</span>
+                    <h2 class="font-serif text-3xl lg:text-4xl font-bold text-[#2D2A26] mt-2">This Week's Masterpieces</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button class="px-4 py-2 rounded-full bg-[#2D2A26] text-white text-xs font-medium">All Recipes</button>
+                    <button class="px-4 py-2 rounded-full bg-[#FBF9F5] text-[#5C554E] hover:bg-[#EFECE6] text-xs font-medium transition-colors">Breakfast</button>
+                    <button class="px-4 py-2 rounded-full bg-[#FBF9F5] text-[#5C554E] hover:bg-[#EFECE6] text-xs font-medium transition-colors">Dinner</button>
+                    <button class="px-4 py-2 rounded-full bg-[#FBF9F5] text-[#5C554E] hover:bg-[#EFECE6] text-xs font-medium transition-colors">Dessert</button>
+                </div>
+            </div>
+
+            <!-- Recipe Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Recipe Card 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-[#EFECE6]">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=800&auto=format&fit=crop" alt="Salad" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2A26] text-xs font-semibold px-3 py-1 rounded-full">Easy • 20 mins</span>
+                        <button class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#2D2A26] hover:text-[#E07A5F] transition-colors shadow">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-[#E07A5F] font-semibold tracking-wider uppercase mb-1">
+                        <span>Vibrant & Fresh</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#2D2A26] group-hover:text-[#E07A5F] transition-colors">
+                        Roasted Fig & Burrata Harvest Bowl
+                    </h3>
+                    <p class="text-sm text-[#7A7267] mt-1 line-clamp-2">
+                        A harmonious balance of creamy burrata, sweet caramelized figs, and crisp arugula drizzled with aged balsamic reduction.
+                    </p>
+                </div>
+
+                <!-- Recipe Card 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-[#EFECE6]">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop" alt="Steak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2A26] text-xs font-semibold px-3 py-1 rounded-full">Chef Level • 45 mins</span>
+                        <button class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#2D2A26] hover:text-[#E07A5F] transition-colors shadow">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-[#E07A5F] font-semibold tracking-wider uppercase mb-1">
+                        <span>Fire & Smoke</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#2D2A26] group-hover:text-[#E07A5F] transition-colors">
+                        Pan-Seared Wagyu with Herb Butter
+                    </h3>
+                    <p class="text-sm text-[#7A7267] mt-1 line-clamp-2">
+                        Master the perfect crust with this step-by-step guide to high-heat searing, completed with rosemary garlic butter.
+                    </p>
+                </div>
+
+                <!-- Recipe Card 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-[#EFECE6]">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop" alt="Pizza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2A26] text-xs font-semibold px-3 py-1 rounded-full">Intermediate • 90 mins</span>
+                        <button class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#2D2A26] hover:text-[#E07A5F] transition-colors shadow">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-[#E07A5F] font-semibold tracking-wider uppercase mb-1">
+                        <span>Artisanal Baking</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#2D2A26] group-hover:text-[#E07A5F] transition-colors">
+                        Neapolitan Margherita with Hot Honey
+                    </h3>
+                    <p class="text-sm text-[#7A7267] mt-1 line-clamp-2">
+                        Achieve blistered, leopard-spotted crusts at home using standard kitchen ovens with our proprietary dough technique.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Masterclass Promo Section -->
+    <section id="masterclass" class="py-20 bg-[#2D2A26] text-[#FBF9F5] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-xs font-bold tracking-widest uppercase text-[#E07A5F]">Interactive Learning</span>
+                <h2 class="font-serif text-4xl lg:text-5xl font-bold">Learn directly from Michelin-trained masters.</h2>
+                <p class="text-[#9C958D] leading-relaxed">
+                    Skip the endless text tutorials. Watch ultra-high-definition masterclasses breaking down complex knife skills, sauce foundations, and plating aesthetics down to the exact degree.
+                </p>
+                <div class="flex flex-wrap gap-6 pt-2">
+                    <div>
+                        <h4 class="font-serif text-3xl font-bold text-white">40+</h4>
+                        <p class="text-xs text-[#9C958D] mt-1">Exclusive Masterclasses</p>
+                    </div>
+                    <div class="w-px bg-[#45403A]"></div>
+                    <div>
+                        <h4 class="font-serif text-3xl font-bold text-white">12k</h4>
+                        <p class="text-xs text-[#9C958D] mt-1">Active Home Chefs</p>
+                    </div>
+                    <div class="w-px bg-[#45403A]"></div>
+                    <div>
+                        <h4 class="font-serif text-3xl font-bold text-white">100%</h4>
+                        <p class="text-xs text-[#9C958D] mt-1">Satisfaction Guarantee</p>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <button class="bg-[#E07A5F] hover:bg-[#c9684e] text-white px-8 py-4 rounded-full text-sm font-medium transition-all shadow-lg">
+                        Explore All Masterclasses
+                    </button>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden aspect-video relative shadow-2xl border border-[#45403A]">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1000&auto=format&fit=crop" alt="Chef cooking class" class="w-full h-full object-cover opacity-80">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button class="w-16 h-16 rounded-full bg-white text-[#2D2A26] flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-play ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1816] text-[#9C958D] py-16 border-t border-[#2D2A26]">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <div class="space-y-4 md:col-span-1">
+                <a href="#" class="font-serif text-2xl font-bold text-white flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-[#E07A5F]"></span>
+                    Savor & Soul
+                </a>
+                <p class="text-sm">Elevating home cooking through design, aesthetics, and culinary excellence.</p>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#recipes" class="hover:text-white transition-colors">Recipes</a></li>
+                    <li><a href="#masterclass" class="hover:text-white transition-colors">Masterclasses</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pantry Essentials</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Journal</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Legal & Privacy</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Cookie Preferences</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Stay Inspired</h4>
+                <p class="text-sm mb-4">Receive our weekly curation of hand-picked seasonal recipes right to your inbox.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Your email address" class="bg-[#2D2A26] px-4 py-2.5 rounded-l-xl text-sm text-white focus:outline-none w-full placeholder-[#7A7267]">
+                    <button class="bg-[#E07A5F] hover:bg-[#c9684e] text-white px-4 rounded-r-xl transition-colors">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-[#2D2A26] text-xs flex flex-col sm:flex-row items-center justify-between">
+            <p>&copy; 2026 Savor & Soul Studio. All rights reserved.</p>
+            <div class="flex gap-4 mt-4 sm:mt-0 text-white">
+                <a href="#" class="hover:text-[#E07A5F]"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-[#E07A5F]"><i class="fa-brands fa-pinterest text-lg"></i></a>
+                <a href="#" class="hover:text-[#E07A5F]"><i class="fa-brands fa-youtube text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
